@@ -53,7 +53,7 @@
 /* Based on MurmurHash3, written by Austin Appleby and placed in the
  * public domain.
  */
-static inline int avtab_hash(struct avtab_key *keyp, uint32_t mask)
+int avtab_hash(struct avtab_key *keyp, uint32_t mask)
 {
 	static const uint32_t c1 = 0xcc9e2d51;
 	static const uint32_t c2 = 0x1b873593;
